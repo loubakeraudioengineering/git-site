@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lou Baker Audio Engineering</title>
+    <meta name="description" content="Lou Baker Audio Engineering is a professional audio engineering 
+company offering high-quality audio solutions.">
+    <meta name="keywords" content="audio engineering, Lou Baker Audio Engineering, sound solutions, 
+professional audio, music studio, music production, sound design, recording studio, mixing, mastering, 
+music mixing, music mastering, audio post-production">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Lou Baker Audio Engineering">
+    <meta name="address" content="Rockport, TX 78382">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            background-color: #000;
+            color: #ccc;
+            font-family: Arial, sans-serif;
+            background-image: url('images/backgrounds/console_black_1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        /* Animated black overlay for glowing effect */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.15); /* Start at 15% black */
+            pointer-events: none;
+            z-index: 0;
+            animation: bgGlow 5s ease-in-out infinite alternate;
+        }
+        @keyframes bgGlow {
+            0%   { background: rgba(0,0,0,0.15); }
+            50%  { background: rgba(0,0,0,0.65); }
+            100% { background: rgba(0,0,0,0.15); }
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .site-title-block {
+            text-align: center;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.4em;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-top: 36px;
+            margin-bottom: 18px;
+            color: #eaf6ff;
+            background: linear-gradient(
+                180deg, 
+                rgba(80, 220, 255, 0.25) 0%,   
+                rgba(0, 40, 80, 0.25) 100%     
+            );
+            padding: 24px 36px 24px 36px;
+            border-radius: 24px;
+            box-shadow: 0 4px 24px 0 rgba(0, 102, 255, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            border: 1.5px solid #c0c0c0;
+        }
+        .site-title-block .site-title {
+            background: linear-gradient(90deg, #eaf6ff 0%, #b0e0ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            opacity: 0.5; /* 50% transparent */
+        }
+        .site-title-block .site-moto,
+        .site-title-block .site-phone {
+            color: #eaf6ff;
+            font-size: 0.5em;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: 1px;
+            opacity: 0.35; /* 65% transparent (1 - 0.65 = 0.35) */
+        }
+        .site-title-block .site-moto {
+            margin-bottom: 4px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        .service-block {
+            background: rgba(20, 20, 40, 0.85);
+            border-radius: 12px;
+            padding: 20px;
+            color: #eaf6ff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            border: 1.5px solid #c0c0c0;
+            position: relative;
+        }
+        .service-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.25em;
+            text-align: center;
+            width: 100%;
+            color: #eaf6ff;
+            letter-spacing: 1px;
+        }
+        .service-desc {
+            font-size: 0.98em;
+            color: #b8e6ff;
+            flex: 1 1 auto;
+        }
+        .service-link {
+            font-weight: bold;
+            color: #eaf6ff;
+            text-decoration: underline;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        .service-link:hover {
+            color: #4fdcff;
+        }
+        @media (max-width: 900px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .site-title-block {
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .site-title-block {
+                font-size: 1.1em;
+                padding: 12px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="site-title-block">
+            <div class="site-title">Lou Baker Audio Engineering</div>
+            <div class="site-moto">~Sound's good, is good~</div>
+            <div class="site-phone">361.463.3020</div>
+        </div>
+        <div class="services-grid">
+            <div class="service-block">
+                <div class="service-title">audio engineering</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="audio_engineering.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">audio post-production</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="audio_post-production.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">mixing</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="mixing.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">music mastering</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="music_mastering.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">music mixing</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="music_mixing.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">music production</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="music_production.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">professional audio</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="professional_audio.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">recording studio</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="recording_studio.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">sound design</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="sound_design.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">sound solutions</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="sound_solutions.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">podcast editing</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="podcast_editing.html">tell me more~</a>
+            </div>
+            <div class="service-block">
+                <div class="service-title">youtube editing</div>
+                <div class="service-desc">Description goes here.</div>
+                <a class="service-link" href="youtube_editing.html">tell me more~</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
